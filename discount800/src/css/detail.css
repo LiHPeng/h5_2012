@@ -1,0 +1,1355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+b {
+    font-weight: normal;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+
+/* 头部 */
+
+.top-warning {
+    height: 43px;
+    background-color: #fff5f8;
+    padding: 8px 0;
+    position: relative;
+}
+
+.top-warning>span {
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url("https://i4.tuanimg.com/shop/asset/d/icon/hb_1.250cb944.png") 0 -79px no-repeat;
+    left: 150px;
+    top: 8px;
+}
+
+.top-warning>div {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: red;
+    padding-left: 20px;
+}
+
+.top_box {
+    border-bottom: 1px solid #666;
+    width: 100%;
+    background-color: #fafafa;
+    margin-bottom: 30px;
+}
+
+.top_box>.toolbar {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: #999;
+}
+
+.top_box>.toolbar>ul {
+    height: 30px;
+}
+
+.top_box>.toolbar>ul>.phone {
+    position: relative;
+}
+
+.top_box>.toolbar>ul>.phone>div {
+    width: 121px;
+    height: 120px;
+    border: 1px solid blanchedalmond;
+    position: absolute;
+    left: -42px;
+    top: 25px;
+    background: #fff;
+    display: none;
+    z-index: 500;
+}
+
+.top_box>.toolbar>ul>.phone>div>a {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: url("https://status.tuanimg.com/statics/zhe/components/toolbar/img/big_bg_img_v3.png") center no-repeat;
+}
+
+.top_box>.toolbar>ul>.phone:hover {
+    background: #fff;
+}
+
+.top_box>.toolbar>ul>.phone:hover>div {
+    display: block;
+}
+
+.top_box>.toolbar>ul>li {
+    float: left;
+    margin: 5px 10px;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.top_box>.toolbar>ul>li>a {
+    color: red;
+}
+
+.top_box>.toolbar>ul>li:hover {
+    color: red;
+}
+
+.top_box>.header {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.top_box>.header .header-img {
+    margin-top: 20px;
+}
+
+.top_box>.header .header-input {
+    margin-top: 25px;
+    height: 35px;
+    width: 500px;
+    border: 2px solid #e60044;
+    border-right: 0;
+    position: relative;
+}
+
+.top_box>.header .header-input>div {
+    float: left;
+    line-height: 35px;
+    width: 100px;
+    height: 35px;
+    padding-right: 17px;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    font-family: "microsoft yahei";
+    background: url("https://status.tuanimg.com/statics/zhe/common/img/index-common.png")-34px -34px no-repeat;
+    cursor: pointer;
+}
+
+.top_box>.header .header-input>input {
+    width: 335px;
+    height: 35px;
+    border: 0;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.top_box>.header .header-input>span {
+    background: url("https://status.tuanimg.com/statics/zhe/common/img/index-common.png ") 0 -34px no-repeat;
+    width: 15px;
+    height: 39px;
+    position: absolute;
+    top: -2px;
+    left: 498px;
+}
+
+.top_box>.header .header-input>a {
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    margin-top: 7px;
+    cursor: pointer;
+    background: url("https://status.tuanimg.com/statics/zhe/common/img/index-common.png") -34px 0 no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.top_box>.header .header-test>img {
+    width: 340px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.top_box>.head_nav {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+}
+
+.top_box>.head_nav>ul {
+    height: 42px;
+    color: #696969;
+}
+
+.top_box>.head_nav>ul>li {
+    line-height: 40px;
+    height: 40px;
+    width: 109px;
+    float: left;
+    text-align: center;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.head_nav>ul>li>a {
+    height: 40px;
+    width: 109px;
+    display: block;
+}
+
+.top_box>.head_nav>ul>li:hover {
+    border-bottom: 2px solid #e60044;
+    box-shadow: -2px 0 4px -1px #999;
+}
+
+.top_box>.head_nav>ul>span {
+    cursor: pointer;
+    float: right;
+    line-height: 40px;
+    height: 40px;
+    width: 109px;
+}
+
+
+/* 主体 */
+
+.main {
+    height: 600px;
+}
+
+.main>.banne {
+    width: 1200px;
+    height: 520px;
+    margin: 0 auto;
+}
+
+.banne>.img_box {
+    width: 402px;
+    height: 520px;
+    float: left;
+}
+
+.img_box>#img {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #e5e5e5;
+}
+
+#img>img {
+    width: 400px;
+    height: 400px;
+}
+
+.img_box>.ullist {
+    height: 60px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.ullist>ul>li {
+    width: 56px;
+    height: 57px;
+    border: solid 1px #ccc;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.ullist>ul>li>img {
+    width: 56px;
+    height: 58px;
+}
+
+.img_box>.function {
+    margin-top: 15px;
+    height: 23px;
+}
+
+.img_box .lf {
+    float: left;
+    margin-left: 25px;
+    position: relative;
+}
+
+.shou>a>li {
+    width: 16px;
+    height: 14px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/p_Spirit1-3.95484520.png') no-repeat 0 -192px;
+    position: absolute;
+    left: -15px;
+    top: 4px;
+}
+
+.fen>a>li {
+    width: 16px;
+    height: 14px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/p_Spirit1-3.95484520.png') no-repeat -32px -192px;
+    position: absolute;
+    left: -17px;
+    top: 4px;
+}
+
+.ju>a>li {
+    width: 16px;
+    height: 14px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/p_Spirit1-3.95484520.png') no-repeat -64px -192px;
+    position: absolute;
+    left: -15px;
+    top: 4px;
+}
+
+
+/* 右侧盒子 */
+
+.banne>.detail {
+    float: left;
+    margin-left: 53px;
+    width: 745px;
+    height: 520px;
+}
+
+.detail>.score {
+    width: 150px;
+    height: 480px;
+    float: right;
+    border: 1px solid #e5e5e5;
+    padding: 19px 15px 0;
+}
+
+.score>.shop {
+    height: 40px;
+    border-bottom: 1px dotted #e5e5e5;
+    padding-bottom: 8px;
+    color: #333333;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.score>.credit_box {
+    width: 170px;
+    height: 83px;
+    padding: 10px 0;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+.credit_box>.credit {
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.credit>span {
+    vertical-align: middle;
+    font: 12px '微软雅黑';
+    color: #666;
+}
+
+.credit>i {
+    vertical-align: middle;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/icon/icon_level_new2.ddb32b36.png')no-repeat 0 -24px;
+}
+
+.pledge_box>.pledge {
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.pledge>span {
+    vertical-align: middle;
+    font: 12px '微软雅黑';
+    color: #666;
+}
+
+.pledge>i {
+    vertical-align: middle;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/icon/icon_level_new2.ddb32b36.png')no-repeat 0 -24px;
+}
+
+.detail>.details_box {
+    float: left;
+    width: 545px;
+    height: 456px;
+}
+
+.p_name>.title {
+    font: 700 16px/24px "\5FAE\8F6F\96C5\9ED1";
+    line-height: 26px;
+    color: #000;
+}
+
+
+/* 价格表 */
+
+.details_box>.price {
+    background-color: #fff6eb;
+    width: 509px;
+    height: 98px;
+    padding: 12px 18px 9px 18px;
+}
+
+.price>strong {
+    font: 700 16px/30px "\5FAE\8F6F\96C5\9ED1";
+    color: red;
+    height: 35px;
+    display: block;
+}
+
+.price>strong>i {
+    font-size: 26px;
+    color: red;
+    margin-right: 50px;
+}
+
+.price>strong>.packet {
+    height: 35px;
+    /* line-height: 35px; */
+    color: #333333;
+    font-size: 16px;
+    font-family: "fangsong";
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.packet>i {
+    display: block;
+    width: 11px;
+    height: 16px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/p_Spirit1-3.95484520.png') no-repeat -89px -284px;
+    position: absolute;
+    left: -14px;
+    top: 7px;
+}
+
+.packet>.hb {
+    color: #666;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.price>.integral {
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+}
+
+.integral>i {
+    display: inline-block;
+    width: 44px;
+    height: 16px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #ff8a00;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-right: 10px;
+}
+
+.integral>b {
+    font-size: 13px;
+    color: #666;
+}
+
+.reduced>i {
+    display: inline-block;
+    width: 44px;
+    height: 16px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #fe7393;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin-right: 10px;
+}
+
+.reduced>b {
+    font-size: 13px;
+    color: #fe7393;
+    margin-right: 10px;
+}
+
+.reduced>a {
+    display: inline-block;
+    width: 60px;
+    font-size: 13px;
+    text-align: center;
+    color: #fe7393;
+    background-color: #fff;
+    border: 1px solid #fe7393;
+    line-height: 16px!important;
+    height: 16px;
+}
+
+.reduced>a:hover {
+    background-color: #fe7393;
+    color: #fff;
+}
+
+.reduced>span {
+    font-size: 13px;
+    color: #fe7393;
+    float: right;
+}
+
+.freight {
+    height: 26px;
+    margin: 10px;
+}
+
+.freight>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+}
+
+.freight>b {
+    color: #666;
+    font: 12px '微软雅黑';
+}
+
+.serve {
+    height: 26px;
+    margin: 10px;
+    position: relative;
+}
+
+.serve>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+}
+
+.serve>i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 6px 5px 0 0;
+    background: #ec1813;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 17px;
+}
+
+.serve>em {
+    color: #666;
+    font: 12px '微软雅黑'
+}
+
+.safeguard {
+    width: 540px;
+    height: 20px;
+    float: left;
+    margin-top: 30px;
+}
+
+.safeguard>a {
+    display: inline-block;
+    width: 105px;
+    height: 20px;
+}
+
+.safeguard>a>i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+}
+
+.safeguard>a>span {
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+}
+
+.safeguard>a>em {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new_ico8.e0121a0d.png')no-repeat -133px -199px;
+}
+
+.safeguard>a>b {
+    font-size: 12px;
+    color: #666;
+    vertical-align: middle;
+}
+
+.details_box>.hue {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.details_box>.hue>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.hue>ul>li {
+    cursor: pointer;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    margin: 0 6px 6px 0;
+    overflow: hidden;
+}
+
+.details_box>.scope {
+    padding: 0 10px;
+}
+
+.details_box>.scope>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.scope>ul {
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.scope>ul>li {
+    float: left;
+    width: 29px;
+    height: 24px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    margin: 0 6px 6px 0;
+    overflow: hidden;
+}
+
+.scope a {
+    display: block;
+    width: 29px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.scope a:hover {
+    color: red;
+}
+
+.details_box>.amount {
+    padding: 0 10px;
+    height: 40px;
+    margin-top: 10px;
+    color: #666;
+    font: 12px '微软雅黑';
+}
+
+.details_box>.amount>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.amount .left {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font: 700 18px/26px "\5FAE\8F6F\96C5\9ED1";
+    border: solid 1px #9c9c9c;
+    vertical-align: middle;
+    border-right: #fff;
+}
+
+.amount input {
+    vertical-align: middle;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #9c9c9c;
+    text-align: center;
+}
+
+.amount .right {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font: 700 18px/26px "\5FAE\8F6F\96C5\9ED1";
+    border: solid 1px #9c9c9c;
+    vertical-align: middle;
+    border-left: #fff;
+}
+
+.submit {
+    width: 521px;
+    height: 55px;
+    margin-top: 13px;
+}
+
+.submit a {
+    display: inline-block;
+    width: 160px;
+    height: 55px;
+    font-size: 20px;
+}
+
+.submit>.buy_box>a {
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid #ec1611;
+    color: #ec1611;
+    outline: none;
+    cursor: pointer;
+    line-height: 55px;
+    text-align: center;
+    background: #fff;
+}
+
+.submit>.join_box>a {
+    line-height: 55px;
+    text-align: center;
+    border: 1px solid #ec1611;
+    background-color: #ec1611;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* 隐藏盒子 */
+
+.details_box>.style_box {
+    position: absolute;
+    top: 445px;
+    left: 625px;
+    width: 502px;
+    border: 1px solid #9c9c9c;
+    background-color: #fff;
+    overflow: hidden;
+    display: none;
+}
+
+.style_box>h3 {
+    line-height: 26px;
+    border-bottom: 1px dotted #999;
+    padding: 0 10px;
+    color: #333;
+    font-family: "\5B8B\4F53";
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.style_box>span {
+    display: block;
+    width: 12px;
+    height: 11px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new_ico6.4e78c040.png') no-repeat -48px -35px;
+    position: absolute;
+    top: 437px;
+    right: 410px;
+    cursor: pointer;
+}
+
+.style_box>.colour {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.style_box>.colour>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.colour>ul>li {
+    float: left;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    margin: 0 6px 6px 0;
+    overflow: hidden;
+}
+
+.style_box>.size {
+    padding: 0 10px;
+}
+
+.style_box>.size>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.size>ul {
+    height: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.size>ul>li {
+    float: left;
+    width: 29px;
+    height: 24px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    margin: 0 6px 6px 0;
+    overflow: hidden;
+}
+
+.size a {
+    display: block;
+    width: 29px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.size a:hover {
+    color: red;
+}
+
+.style_box>.quantity {
+    padding: 0 10px;
+    height: 40px;
+    margin-top: 10px;
+    color: #666;
+    font: 12px '微软雅黑';
+}
+
+.style_box>.quantity>span {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 18px;
+    line-height: 18px;
+    background: url('https://i4.tuanimg.com/shop/asset/item_d/products/new1.ccb9914b.png')no-repeat 0 0;
+    font-size: 13px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.quantity .left,
+.right {
+    display: inline-block;
+    width: 25px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font: 700 18px/26px "\5FAE\8F6F\96C5\9ED1";
+    border: solid 1px #9c9c9c;
+    vertical-align: middle;
+    border-right: #fff;
+}
+
+.quantity input {
+    vertical-align: middle;
+    width: 60px;
+    height: 30px;
+    border: 1px solid #9c9c9c;
+}
+
+.style_box>.confirm {
+    width: 68px;
+    height: 28px;
+    font: 14px/28px "\5FAE\8F6F\96C5\9ED1";
+    color: #fff;
+    margin: 5px 0 12px 45px;
+    background-color: #c7000b;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.overlay_box {
+    width: 510px;
+    margin: auto;
+    position: absolute;
+    top: 370px;
+    left: 555px;
+}
+
+.overlay_top {
+    background-color: #c7000b;
+    color: #fff;
+    font: 14px/20px;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 15px 0 15px 30px;
+    position: relative;
+}
+
+.overlay_box>span {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.overlay_gbox {
+    height: 100px;
+    background-color: #fff;
+}
+
+.go_cart {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color: #dc0000;
+    margin-top: 25px;
+    margin-left: 100px;
+    float: left;
+}
+
+.go_cart>a {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+.continue {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.continue>a {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    color: #666;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*底部  */
+
+.about_box {
+    border-top: 2px solid #ec1611;
+}
+
+.about_box>.about {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 28px;
+    overflow: hidden;
+}
+
+.about_box>.about>li {
+    float: left;
+    width: 140px;
+    height: 270px;
+    padding-left: 70px;
+}
+
+.about_box>.about>li>a {
+    display: block;
+    font-size: 12px;
+    height: 24px;
+    width: 85px;
+    line-height: 24px;
+    color: #999;
+}
+
+.about_box>.about>li>.about_img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 14px;
+    background: url("https://status.tuanimg.com/statics/zhe/common/img/foot_icon.png") no-repeat 0 0;
+}
+
+.foot-con {
+    padding: 10px 0 30px 0;
+}
+
+.foot-con>span {
+    display: block;
+    text-align: center;
+    color: #999;
+    font-family: "微软雅黑";
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.foot-con>.footer {
+    width: 980px;
+    margin: 0 auto;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.foot-con>.footer>div {
+    height: 25px;
+}
+
+.foot-con>.footer>.fot_img>img {
+    width: 30px;
+    height: 28px;
+}
+
+
+/* 右侧盒子 */
+
+#sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    background-color: #000;
+    height: 100%;
+    min-height: 594px;
+    z-index: 10001;
+    visibility: visible;
+    left: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+}
+
+#sidebar>.tab-top {
+    margin-top: 50px;
+    padding: 10px 0;
+    height: 113px;
+}
+
+#sidebar>.tab-top>a {
+    display: block;
+    height: 113px;
+}
+
+#sidebar>.tab-top>a>.tab_img {
+    display: block;
+    width: 19px;
+    height: 17px;
+    margin: 0 auto;
+    background: url("https://status.tuanimg.com/statics/zhe/common/img/sidebar_cart.png");
+}
+
+#sidebar>.tab-top>a>.tab_test {
+    display: block;
+    width: 20px;
+    height: 50px;
+    line-height: 16px;
+    font-size: 14px;
+    left: 11px;
+    top: 82px;
+    position: absolute;
+    color: #fff;
+}
+
+#sidebar>.tab-top>a>#num {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    font-size: 14px;
+    left: 8px;
+    top: 140px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    background-color: #cf201c;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#sidebar>.tab-top :hover {
+    background-color: #ec1611;
+}
+
+#sidebar>.tab-icon {
+    width: 34px;
+    height: 42px;
+}
+
+#sidebar .order_f {
+    width: 150px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 42px;
+    color: #fff;
+    text-align: center;
+    background: #ec1611;
+    display: none;
+    cursor: pointer;
+}
+
+#sidebar>.order {
+    left: 0;
+    top: 183px;
+    position: absolute;
+}
+
+#sidebar>.order>a {
+    display: block;
+    width: 34px;
+    height: 42px;
+    background: url("https://z5.tuanimg.com/v2/core/img/sidePanelIconsNew.png") no-repeat -131px 0;
+}
+
+#sidebar>.order>.order_box {
+    left: -150px;
+    top: 1px;
+    position: absolute;
+}
+
+#sidebar>.order:hover>a {
+    background-color: #ec1611;
+}
+
+#sidebar>.order:hover .order_box {
+    display: block;
+}
+
+#sidebar .coupons_outer {
+    left: 0px;
+    top: 226px;
+    position: absolute;
+}
+
+#sidebar .coupons_outer>.coupons {
+    width: 34px;
+    height: 32px;
+}
+
+#sidebar .coupons_outer>.coupons>a {
+    display: block;
+    width: 34px;
+    height: 32px;
+    margin: 10px 0 0 8px;
+    background: url("https://z5.tuanimg.com/v2/core/img/quan_iconnew.png") no-repeat;
+}
+
+#sidebar .coupons_outer>.coupons>.coupons_box {
+    left: -150px;
+    top: 0;
+    position: absolute;
+}
+
+#sidebar .coupons_outer:hover {
+    background-color: #ec1611;
+}
+
+#sidebar .coupons_outer:hover .coupons_box {
+    display: block;
+}
+
+#sidebar>.side_collect {
+    left: 0px;
+    top: 268px;
+    position: absolute;
+}
+
+#sidebar>.side_collect>.collect {
+    width: 34px;
+    height: 32px;
+}
+
+#sidebar>.side_collect>.collect>a {
+    display: block;
+    width: 34px;
+    height: 32px;
+    margin: 10px 0 0 8px;
+    background: url("https://z5.tuanimg.com/v2/core/img/myFavorites.png") no-repeat 1px 0;
+}
+
+#sidebar>.side_collect>.collect>.collect_box {
+    left: -150px;
+    top: 0;
+    position: absolute;
+}
+
+#sidebar .side_collect:hover {
+    background-color: #ec1611;
+}
+
+#sidebar .side_collect:hover .collect_box {
+    display: block;
+}
+
+#sidebar .side_message {
+    left: 0;
+    top: 311px;
+    position: absolute;
+}
+
+#sidebar .side_message>a {
+    display: block;
+    width: 34px;
+    height: 42px;
+    background: url("https://z5.tuanimg.com/v2/core/img/side_golds.png") no-repeat 4px -227px;
+}
+
+#sidebar .side_message>.message {
+    left: -150px;
+    top: 1px;
+    position: absolute;
+}
+
+#sidebar .side_message:hover>a {
+    background-color: #ec1611;
+}
+
+#sidebar .side_message:hover .message {
+    display: block;
+}
+
+#sidebar .return_top {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    display: none;
+}
+
+#sidebar .return_top>a {
+    display: block;
+    width: 34px;
+    height: 42px;
+    background: url("https://z5.tuanimg.com/v2/core/img/sidePanelIconsNew.png") no-repeat -554px 0;
+}
+
+#sidebar .return_top>.go_top {
+    left: -150px;
+    top: 1px;
+    position: absolute;
+}
+
+#sidebar .return_top:hover>a {
+    background-color: #ec1611;
+}
+
+#sidebar .return_top:hover .go_top {
+    display: block;
+}

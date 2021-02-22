@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <script src="./script/detail_module.js" type="module"></script>
+    <link rel="stylesheet" href="./css/detail.css">
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="top-warning">
+        <span></span>
+        <div>
+            安全提示：近期有不法分子，以网络刷单为由实施套现诈骗，为了避免您不必要的资金损失，请您不要相信，请勿参与任何刷单行为，同时注意，不要随意点击陌生链接或扫描陌生二维码等操作，感谢您的理解与配合，祝您生活愉快~
+
+        </div>
+    </div>
+    <div class="top_box">
+        <!--登入工具栏-->
+        <div class="toolbar">
+            <ul>
+                <li>团800旗下网站 </li>
+                <li class="phone">手机版
+                    <div class="im_box">
+                        <a href="https://www.zhe800.com/app#page1"></a>
+                    </div>
+                </li>
+                <li>QQ登录</li>
+                <li>
+                    <div class="come unlogin">
+                        <a href="http://10.31.165.23/discount800/src/login.html">登录</a>
+                        <a href="http://10.31.165.23/discount800/src/registry.html">免费注册</a>
+                    </div>
+                    <div class="come latent" style="display: none;">
+                        <span class="login_name"></span>
+                        <a class="quit" style="color: #999;">,退出</a>
+                    </div>
+                </li>
+                <li>我的订单</li>
+                <li>购物车<strong style="color: #cf201c;margin-left: 2px;" id="num">0</strong></li>
+                <li>帮助中心</li>
+                <li style="border-right: 0px;">卖家中心</li>
+
+            </ul>
+
+            <!-- <div class="login_register">
+            
+            </div> -->
+        </div>
+        <!--搜索栏-->
+        <div class="header">
+            <div class="header-img">
+                <img src="https://status.tuanimg.com/statics/zhe/common/img/logo_zhe800_new.png" alt="" style="cursor: pointer;">
+            </div>
+            <div class="header-input">
+                <div>搜索</div>
+                <input type="" name="" value="" placeholder="
+                搜低价商品">
+                <span></span>
+                <a href=""></a>
+            </div>
+            <div class="header-test">
+                <img src="https://status.tuanimg.com/statics/zhe/common/img/head_three_icon_retina.png" alt="">
+            </div>
+        </div>
+        <!--导航栏-->
+        <div class="head_nav">
+            <ul>
+                <li style="background-color: #e60044; height: 40px;width: 109px;display: block;"><a href="http://10.31.165.23/discount800/src/index1.html" style="color: #fff;">首页</a></li>
+                <li>淘宝精选</li>
+                <li>9块9包邮</li>
+                <li>排行榜</li>
+                <li>品牌榜</li>
+                <li>优品汇</li>
+                <li>积分商城</li>
+                <span>签到分享好礼</span>
+            </ul>
+        </div>
+    </div>
+    <!-- 主体 -->
+    <div class="main">
+        <div class="banne">
+            <div class="img_box">
+                <div id="img">
+                    <img src="" alt="">
+                </div>
+                <div class="ullist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class=" function">
+                    <div class="shou lf">
+                        <a href="">
+                            <li></li>
+                            收藏
+                        </a>
+                    </div>
+                    <div class="fen lf">
+                        <a href="">
+                            <li></li>
+                            分享
+                        </a>
+                    </div>
+                    <div class="ju lf">
+                        <a href="">
+                            <li></li>
+                            举报
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="details_box">
+                    <div class="p_name">
+                        <a href="" class="title"></a>
+                    </div>
+                    <div class="price">
+                        <strong>
+                            <em>￥</em>
+                            <i class="loadpcp"></i>
+                            <em class="packet">
+                                <i></i>
+                                <span class="hb">去客户端签到可领红包</span>
+                            </em>
+                        </strong>
+                        <p class="integral">
+                            <i>积分</i>
+                            <b>积分Z0最多返40积分</b>
+                        </p>
+                        <p class="reduced">
+                            <i>优惠</i>
+                            <b>指定商品领券无条件减10元&nbsp;&nbsp;></b>
+                            <a href="">点击领券</a>
+                            <span>更多优惠活动！</span>
+                        </p>
+                    </div>
+                    <div class="freight">
+                        <span>运费</span>
+                        <b>福建 泉州&nbsp;至&nbsp;&nbsp;&nbsp;浙江 ∨ &nbsp;&nbsp;&nbsp;免运费</b>
+                    </div>
+                    <div class="serve">
+                        <span>服务</span>
+                        <i>折</i>
+                        <em>本商品由折800买手砍价</em>
+                    </div>
+                    <div class="scope">
+                        <span>尺寸</span>
+                        <ul>
+                            <li style="border: 2px solid red;">
+                                <a>36</a>
+                            </li>
+                            <li>
+                                <a style="pointer-events: none;cursor: default;color:gray;">37</a>
+                            </li>
+                            <li>
+                                <a style="pointer-events: none;cursor: default;color:gray;">38</a>
+                            </li>
+                            <li>
+                                <a style="pointer-events: none;cursor: default;color:gray;">39</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="amount">
+                        <span>数量</span>
+                        <i class="left">-</i>
+                        <input type="text" value="1" class="ipt_val" maxlength="5">
+                        <i class="right">+</i> &nbsp;库存&nbsp;15&nbsp;件 &nbsp;(每人限购5件)
+                    </div>
+                    <div class="submit">
+                        <span class="buy_box">
+                            <a href="http://10.31.165.23/discount800/src/cartlist.html">立即购买</a>
+                        </span>
+                        <span class="join_box">
+                            <a href="javascript:;">加入购物车</a>
+                        </span>
+                    </div>
+                    <!-- 隐藏盒子 -->
+                    <div class="style_box">
+                        <h3>请选择您要购买的商品信息：</h3>
+                        <span></span>
+                        <div class="colour ">
+                            <span>颜色</span>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="size">
+                            <span>尺寸</span>
+                            <ul>
+                                <li style="border: 1px solid red;">
+                                    <a href="">36</a>
+                                </li>
+                                <li>
+                                    <a href="">37</a>
+                                </li>
+                                <li>
+                                    <a href="">38</a>
+                                </li>
+                                <li>
+                                    <a href="">39</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="quantity">
+                            <span>数量</span>
+                            <i class="left">-</i><input type="text"><i class="right">+</i> &nbsp;库存&nbsp;15&nbsp;件 &nbsp;(每人限购5件)
+                        </div>
+                        <div class="confirm">确定</div>
+                    </div>
+                </div>
+                <div class="score">
+                    <div class="shop">
+                    </div>
+                    <div class="credit_box">
+                        <div class="credit">
+                            <span>信用:</span>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                        <div class="pledge_box">
+                            <div class="pledge">
+                                <span>资质:</span>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="safeguard">
+                    <a href="https://help.zhe800.com/detail/104">
+                        <i>7</i>
+                        <span>7天无理由退换</span>
+                    </a>
+                    <a href="https://shop.zhe800.com/n/act/yunfeibutieka?utm_content=p_detail_baozhang">
+                        <em></em>
+                        <b>退货补贴优惠券</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 遮罩层 -->
+        <div class="overlay" style="background:rgba(54, 53, 53,0.5); width: 100%; height: 1400px;  position: absolute; left: 0px; top: 0px; z-index: 99999; display: none;">
+            <div class="overlay_box">
+                <div class="overlay_top">添加成功</div>
+                <span>X</span>
+                <div class="overlay_gbox">
+                    <span class="go_cart"><a href="http://10.31.165.23/discount800/src/cartlist.html">去购物车结算</a></span>
+                    <span class="continue">
+                        <a>继续购物</a>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="about_box">
+        <ul class="about">
+            <li style="padding-left: 0;">
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+        </ul>
+    </div>
+    <div class="foot-con">
+        <span>
+            友情链接：卡宝宝&nbsp;&nbsp;&nbsp;信用卡&nbsp;&nbsp;&nbsp;酷价千图网&nbsp;&nbsp;&nbsp;火车票&nbsp;&nbsp;&nbsp;名鞋库&nbsp;&nbsp;&nbsp;万表网&nbsp;&nbsp;&nbsp;114票务网中国丽人网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多>>
+        </span>
+        <div class="footer">
+            <div>
+                <span>京IPC证号 京B2-20210212 京ICP备2020047705号-2</span>
+                <span><img src="https://status.tuanimg.com/statics/zhe/common/img/beian.png" alt="">11010502043463号 统一社会信用代码 91110105MA01XAFD7J</span>
+            </div>
+            <div>
+                <span>
+                    出版物经营许可证 新出发京零字第朝200447号   Copyright©2011-2020 版权所有 ZHE800.COM
+                </span>
+            </div>
+            <div>
+                北京哲博科技有限公司、地址：北京市朝阳区裕民路12号1号楼2层A204、邮箱：contact@tuan800.com、电话：400-0611-800
+            </div>
+            <div class="fot_img">
+                <img src="https://status.tuanimg.com/statics/zhe/subject/img/logo.jpg" alt="">
+                <img src="https://status.tuanimg.com/statics/zhe/common/img/gsrz-icon.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 右侧盒子 -->
+    <div id="sidebar">
+        <div class="tab-top">
+            <a href="http://10.31.165.23/discount800/src/cartlist.html">
+                <span class="tab_img"></span>
+                <span class="tab_test">购物车 </span>
+                <strong id="num">0</strong>
+            </a>
+        </div>
+        <div class="tab-icon order">
+            <a href=""></a>
+            <div class="order_box order_f">我的订单</div>
+        </div>
+        <div class="coupons_outer">
+            <div class="tab-icon coupons">
+                <a href=""></a>
+                <div class="coupons_box order_f">我的优惠卷</div>
+            </div>
+        </div>
+        <div class="side_collect">
+            <div class="tab-icon collect">
+                <a href=""></a>
+                <div class="collect_box order_f">我的优惠卷</div>
+            </div>
+        </div>
+        <div class="side_message">
+            <a href=""></a>
+            <div class="message order_f">卖家信息</div>
+        </div>
+        <div class="return_top">
+            <a></a>
+            <div class="go_top order_f">返回顶部</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

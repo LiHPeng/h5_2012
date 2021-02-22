@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>折800通行证</title>
+    <link rel="stylesheet" href="../src/css/registry.css">
+    <script src="script/registry_module.js" type="module"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="area">
+            <a href="http://10.31.165.23/discount800/src/index1.html" id="imglogo"></a>
+            <span>
+                已经有团800或折800帐号了？<a href="http://10.31.165.23/discount800/src/login.html">去登录</a>
+            </span>
+        </div>
+    </div>
+    <div class="register">
+        <form action="http://10.31.165.23//discount800/php/reg.php" method="POST" id="go">
+            <div class="reg_box">
+                <div class="item">
+                    <strong>手机号：</strong>
+                    <input type="text" class="itext" name="phone" placeholder="手机号码" id="phone">
+                    <span class="err_phone"></span>
+                </div>
+                <div class="item">
+                    <strong>密码：</strong>
+                    <input type="password" class="itext" name="password" value="" id="password">
+                    <span></span>
+                </div>
+                <div class="item">
+                    <strong>确认密码：</strong>
+                    <input type="password" class="itext" name="repass" value="" id="repass">
+                    <span></span>
+                </div>
+                <div class="item p">
+                    <input type="checkbox" id="confirm"> 我已阅读并接受折800的<a href="https://help.zhe800.com/detail/82">《用户服务协议》</a>
+                    <span style="bottom: 15px;"></span>
+                </div>
+                <div class="item submit">
+                    <input type="submit" value="同意协议并注册" name="submit" id="sub_box">
+                </div>
+            </div>
+        </form>
+        <div class="else">
+            <p>还可以使用这些账号登录</p>
+            <div class="morelogin">
+                <a href="#">
+                    <i>QQ登录</i>
+                </a>
+                <a href="#" id="baidu">
+                    <i>百度登入</i>
+                </a>
+                <a href="#" id="taobao">
+                    <i>淘宝账号</i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <京ICP备2020047705号-2 Copyright©2011-2021 版权所有 ZHE800.COM>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车列表展示</title>
+    <link rel="stylesheet" href="./css/cartlist.css">
+    <script src="script/cartlist_module.js" type="module"></script>
+</head>
+
+<!-- <body>
+    <div class="head"></div>
+    <div class="main">
+        <div class="area">
+            <div class="thead">
+                <div class="t_checkbox">
+                    <input type="checkbox" name="" id="allsel"> 全选
+                    <span>商品</span>
+                </div>
+                <div class="unit">单价(元)</div>
+                <div class="num">数量</div>
+                <div class="money">金额</div>
+                <div class="handle">操作</div>
+            </div>
+            <div class="modity_box">
+                <div class="modity-list">
+                    <div class="inp-box">
+                        <input type="checkbox" class="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body> -->
+
+<body>
+    <!-- top -->
+    <div class="top_box">
+        <!--登入工具栏-->
+        <div class="toolbar_l">
+            <ul>
+                <li><a href="http://10.31.165.23/discount800/src/index1.html">团800旗下网站 </a></li>
+                <li class="phone">手机版
+                    <div class="im_box">
+                        <a href="https://www.zhe800.com/app#page1"></a>
+                    </div>
+                </li>
+                <li>QQ登录</li>
+                <li>
+                    <div class="come unlogin">
+                        <a href="http://x/discount800/src/login.html">登录</a>
+                        <a href="http://10.31.165.23/discount800/src/registry.html">免费注册</a>
+                    </div>
+                    <div class="come latent" style="display: none;">
+                        <span class="login_name"></span>
+                        <a class="quit" style="color: #999;">,退出</a>
+                    </div>
+                </li>
+                <li>我的订单</li>
+                <li>购物车<strong style="color: #cf201c;margin-left: 2px;" id="num">0</strong></li>
+                <li>帮助中心</li>
+                <li style="border-right: 0px;">卖家中心</li>
+
+            </ul>
+        </div>
+        <div class="top_img">
+            <div class="img_box">
+                <a href="http://10.31.165.23/discount800/src/index1.html" class="one_img">
+                    <img src="https://i4.tuanimg.com/shop/asset/d/icon/logo20172x.png" alt="">
+                </a>
+                <a href="" class="two_img">
+                    <div></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--main-->
+    <div id="container" class="cart">
+        <div class="w">
+            <!--全部商品哪一行-->
+            <div class="cart-top" style="display: block;">
+                <div class="cart-top-left">
+                    <a href=""><em>全部商品</em></a>
+                </div>
+                <div class="footline">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <!--包裹购物车-->
+            <div class="cart-wrap" style="display: block;">
+                <div class="w">
+                    <div id="jd-cart">
+                        <div class="cartmain">
+                            <div class="cart-thead">
+                                <div class="cart-col t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                                    </div>
+                                </div>
+                                <div class="cart-col t-goods">商品</div>
+                                <div class="cart-col t-props"></div>
+                                <div class="cart-col t-prices">单价(元)</div>
+                                <div class="cart-col t-quantity">数量</div>
+                                <div class="cart-col t-sum">小计(元)</div>
+                                <div class="cart-col t-action">操作</div>
+                            </div>
+                            <div id="cart-list">
+                                <div class="cart-item-list">
+                                    <div class="cart-tbody">
+                                        <!-- 显示购物车列表 -->
+                                        <div class="item-list">
+                                            <div class="goods-item goods-item-sele" style="display: none;">
+                                                <div class="goods-info">
+                                                    <div class="cell b-checkbox">
+                                                        <div class="cart-checkbox">
+                                                            <input type="checkbox" checked="" name="" id="" value="" />
+                                                            <span class="line-circle"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-goods">
+                                                        <div class="goods-name">
+                                                            <div class="goods-pic">
+                                                                <a href=""><img src="" alt="" /></a>
+                                                            </div>
+                                                            <div class="goods-msg">
+                                                                <div class="goods-d-info">
+                                                                    <a href="">1111111111111</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-props">
+                                                        <div class="prop-text"></div>
+                                                    </div>
+                                                    <div class="cell b-price">
+                                                        <strong>99.99</strong>
+                                                        <div class="sales-promotion-dropdown">
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-quantity">
+                                                        <div class="quantity-form">
+                                                            <a class="quantity-down" href="javascript:void(0)">-</a>
+                                                            <input type="text" value="1" />
+                                                            <a class="quantity-add" href="javascript:void(0)">+</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cell b-sum">
+                                                        <strong>99.99</strong>
+                                                    </div>
+                                                    <div class="cell b-action">
+                                                        <a href="javascript:void(0)">删除</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-floatbar">
+                        <div class="select-all">
+                            <div class="cart-checkbox">
+                                <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                            </div>
+                        </div>
+                        <div class="operation">
+                            <a href="javascript:void(0)">删除选中的商品</a>
+                        </div>
+                        <div class="toolbar-right">
+                            <div class="btn-area">
+                                <a href="">结算</a>
+                            </div>
+                            <div class="price-sum">
+                                <span class="txt">总价（不含运费）：</span>
+                                <span class="totalprice">￥0.00</span>
+                                <span class="txt">已节省：</span>
+                                <span class="totalsave">-￥0.00</span>
+                            </div>
+                            <div class="amount-sum">
+                                已选择
+                                <em>0</em> 件商品
+                                <b></b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom -->
+    <div class="about_box">
+        <ul class="about">
+            <li style="padding-left: 0;">
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+            <li>
+                <span class="about_img"></span>
+                <span>关于我们</span>
+                <a href="">关于我们</a>
+                <a href="">网站服务条款</a>
+                <a href="">用户服务协议</a>
+                <a href="">联系我们</a>
+                <a href="">隐私政策</a>
+            </li>
+        </ul>
+    </div>
+    <div class="foot-con">
+        <span>
+            友情链接：卡宝宝&nbsp;&nbsp;&nbsp;信用卡&nbsp;&nbsp;&nbsp;酷价千图网&nbsp;&nbsp;&nbsp;火车票&nbsp;&nbsp;&nbsp;名鞋库&nbsp;&nbsp;&nbsp;万表网&nbsp;&nbsp;&nbsp;114票务网中国丽人网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;更多>>
+        </span>
+        <div class="footer">
+            <div>
+                <span>京IPC证号 京B2-20210212 京ICP备2020047705号-2</span>
+            </div>
+            <div>
+                <span>
+                    出版物经营许可证 新出发京零字第朝200447号   Copyright©2011-2020 版权所有 ZHE800.COM
+                </span>
+            </div>
+            <div>
+                北京哲博科技有限公司、地址：北京市朝阳区裕民路12号1号楼2层A204、邮箱：contact@tuan800.com、电话：400-0611-800
+            </div>
+            <div class="fot_img">
+                <div class="cop_box">
+                    <img src="https://status.tuanimg.com/statics/zhe/subject/img/logo.jpg" alt="">
+                    <img src="https://status.tuanimg.com/statics/zhe/common/img/gsrz-icon.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

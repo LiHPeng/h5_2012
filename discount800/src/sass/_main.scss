@@ -1,0 +1,262 @@
+//商品精选
+.brand_bg {
+    width: 100%;
+    >.brand_box {
+        width: 980px;
+        padding-top: 30px;
+        margin: 0 auto;
+        >.brand_infor {
+            height: 40px;
+            border-bottom: 1px solid #ff404c;
+            >img {
+                vertical-align: middle;
+                cursor: pointer;
+            }
+            >span {
+                vertical-align: middle;
+                font-size: 13px;
+                color: #666;
+            }
+            >ul {
+                height: 30px;
+                float: right;
+                >li {
+                    float: left;
+                    line-height: 30px;
+                    font-size: 14px;
+                    color: #333;
+                    margin: 0 7px;
+                    cursor: pointer;
+                }
+                >li:hover {
+                    color: orangered;
+                }
+            }
+        }
+        >.cas {
+            height: 163px;
+            >li {
+                float: left;
+                margin-right: 6px;
+                position: relative;
+                cursor: pointer;
+                >img {
+                    width: 320px;
+                    height: 163px;
+                }
+                >span {
+                    position: absolute;
+                    width: 320px;
+                    bottom: 0;
+                    left: 0;
+                    height: 25px;
+                    font: 12px/25px '微软雅黑';
+                    text-align: center;
+                    color: #FFF;
+                    background: rgba(5, 8, 9, .45);
+                }
+            }
+            >li:hover {
+                box-shadow: 1px 0 9px 3px #999;
+            }
+        }
+        >.brand_log {
+            margin-top: 10px;
+            height: 120px;
+            >ul {
+                height: 120px;
+                overflow: hidden;
+                >li {
+                    float: left;
+                    width: 122px;
+                    height: 60px;
+                    cursor: pointer;
+                    >img {
+                        width: 120px;
+                        height: 60px;
+                    }
+                    >span {
+                        float: left;
+                    }
+                }
+                >li:hover {
+                    border-left: 2px solid #ccc;
+                    border-right: 2px solid #ccc;
+                }
+            }
+        }
+    }
+}
+
+//限时抢购
+.flashSale_dh {
+    border-bottom: 1px solid #ccc;
+    >.flashSale_bg {
+        width: 980px;
+        margin: 0 auto;
+        >.flashSale_top {
+            margin-top: 20px;
+            height: 36px;
+            color: #666;
+            border-bottom: #ff404c 1px solid;
+            >img {
+                vertical-align: middle;
+                cursor: pointer;
+            }
+            >span {
+                vertical-align: middle;
+                font-size: 13px;
+            }
+            >ul {
+                float: right;
+                >li {
+                    line-height: 30px;
+                    text-align: center;
+                    height: 30px;
+                    width: 80px;
+                    margin: 5px 5px 0;
+                    float: left;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+                >li:hover {
+                    background: #ff404c;
+                    color: #fff;
+                }
+            }
+        }
+        >.flashSale_img {
+            width: 980px;
+            height: 250px;
+            >ul {
+                >li {
+                    cursor: pointer;
+                    width: 184px;
+                    height: 250px;
+                    margin-right: 12px;
+                    float: left;
+                    position: relative;
+                    >.li_img {
+                        >img {
+                            width: 185px;
+                            height: 185px;
+                        }
+                        >.li_hove {
+                            width: 100%;
+                            height: 15px;
+                            position: absolute;
+                            bottom: 66px;
+                            left: 0;
+                            font-size: 13px;
+                            text-align: center;
+                            background: rgba($color: #575555, $alpha: 1.0);
+                            color: #fff;
+                            display: none;
+                            >span {
+                                opacity: 4;
+                            }
+                        }
+                    }
+                    .li_img:hover {
+                        .li_hove {
+                            display: block;
+                        }
+                    }
+                    >.wz {
+                        padding: 0 5px;
+                        color: #ff404c;
+                    }
+                    >.zl {
+                        padding: 2px 5px 0;
+                        font-size: 12px;
+                        color: #666;
+                    }
+                }
+                >li:hover {
+                    box-shadow: -3px 0 5px 1px #999;
+                }
+            }
+        }
+    }
+}
+
+//热销推荐
+.hot_sale {}
+
+//优惠商品
+.discounts {
+    background: #f2f2f2;
+    margin-top: 30px;
+    >.discounts_box {
+        width: 980px;
+        margin: 0 auto;
+        >.discounts_top {
+            >img {
+                vertical-align: middle;
+            }
+            >span {
+                vertical-align: middle;
+                font-size: 13px;
+                color: #666;
+                margin-left: 10px;
+            }
+            >ul {
+                height: 42px;
+                float: right;
+                >li {
+                    width: 30px;
+                    text-align: center;
+                    float: left;
+                    font-size: 13px;
+                    color: #666;
+                    margin: 10px 5px 0 0;
+                    border-right: 1px solid #666;
+                }
+            }
+        }
+        >.discounts_details {
+            >ul {
+                overflow: hidden;
+                width: 980px;
+                >li {
+                    float: left;
+                    width: 233px;
+                    height: 295px;
+                    margin: 0 6px 30px;
+                    background: #fff;
+                    >a {
+                        color: #999;
+                        font-size: 13px;
+                        >img {
+                            width: 233px;
+                            height: 233px;
+                        }
+                        >div {
+                            padding: 0 10px;
+                            height: 30px;
+                            >p {
+                                width: 200px;
+                                display: inline-block;
+                                color: #666;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                            >span {
+                                float: right;
+                            }
+                        }
+                        >span {
+                            color: #ec1611;
+                            font-size: 16px;
+                            padding: 0 10px;
+                        }
+                    }
+                }
+                >li:hover {
+                    box-shadow: 1px 0 9px 3px #999;
+                }
+            }
+        }
+    }
+}

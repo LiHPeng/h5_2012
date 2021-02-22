@@ -1,0 +1,166 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  font-style: normal;
+}
+
+body {
+  background-color: #F6F6F6;
+  color: #666;
+  font-size: 12px;
+}
+
+.register {
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px 60px;
+  width: 860px;
+  overflow: hidden;
+}
+
+.item {
+  padding: 15px 0 15px 0;
+  overflow: hidden;
+  width: 400px;
+  position: relative;
+}
+.item > span {
+  position: absolute;
+  bottom: -2px;
+  left: 100px;
+}
+
+strong {
+  font-style: normal;
+  font: 14px/36px "宋体";
+  color: #333;
+  width: 95px;
+  height: 36px;
+  display: inline-block;
+  text-align: right;
+}
+
+.itext {
+  position: relative;
+  width: 290px;
+  height: 30px;
+  display: block;
+  text-indent: 5px;
+  border-radius: 5px;
+  border: 1px solid #d2d2d2;
+  padding: 2px 3px;
+  color: #999;
+  float: right;
+}
+
+.header {
+  height: 87px;
+}
+.header .area {
+  width: 980px;
+  height: 57px;
+  margin: auto;
+  padding: 20px 0 10px;
+}
+.header .area #imglogo {
+  display: inline-block;
+  width: 232px;
+  height: 57px;
+  background: url("https://i0.tuanimg.com/zhe/img/logo20172x.jpg") no-repeat;
+  float: left;
+}
+.header .area span {
+  float: right;
+  margin: 35px 0 0;
+}
+.header .area span a {
+  color: #428bca;
+}
+
+.reg_box {
+  float: left;
+  width: 430px;
+}
+.reg_box .p {
+  padding-left: 105px;
+  padding-bottom: 0;
+}
+.reg_box .p #confirm {
+  color: #666;
+  margin: 3px 3px 3px 4px;
+}
+.reg_box .submit {
+  padding-left: 105px;
+}
+.reg_box .submit #sub_box {
+  background-color: #ff3b37;
+  width: 180px;
+  height: 40px;
+  border: red;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.else {
+  width: 430px;
+  float: right;
+  border-top: 1px solid #ebebeb;
+  position: relative;
+}
+.else p {
+  position: absolute;
+  left: 140px;
+  top: -10px;
+  background-color: #fff;
+}
+.else .morelogin {
+  width: 395px;
+  height: 100px;
+  padding: 20px 0 20px 35px;
+}
+.else .morelogin a {
+  display: block;
+  font-size: 16px;
+  font: 16px/36px "宋体";
+  color: #666;
+  width: 108px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid #d5d5d5;
+  background: #f6f6f6 url("https://i0.tuanimg.com/zhe/img/ico2.png") no-repeat 0 -2px;
+  position: relative;
+  float: left;
+}
+.else .morelogin #baidu {
+  margin-left: 20px;
+  background: #f6f6f6 url("https://i0.tuanimg.com/zhe/img/ico2.png") no-repeat -4px -38px;
+}
+.else .morelogin #taobao {
+  margin-left: 20px;
+  background: #f6f6f6 url("https://i0.tuanimg.com/zhe/img/ico2.png") no-repeat -6px -108px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+  color: #999;
+}
+
+/*# sourceMappingURL=registry.css.map */

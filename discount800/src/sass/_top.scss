@@ -1,0 +1,595 @@
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+li {
+    list-style: none;
+}
+
+//顶部悬浮
+.top_nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    left: 0px;
+    top: -80px;
+    background: #fff;
+    z-index: 800;
+    box-shadow: 0 5px 5px -5px black;
+    >.nav_one {
+        height: 38px;
+        border-bottom: 2px solid #ff404c;
+        >ul {
+            width: 980px;
+            margin: 0 auto;
+            overflow: hidden;
+            >li {
+                line-height: 38px;
+                float: left;
+                margin-right: 20px;
+            }
+            >div {
+                float: right;
+                height: 33px;
+                padding-top: 5px;
+                position: relative;
+                >input {
+                    width: 113px;
+                    height: 27px;
+                    line-height: 38px;
+                    display: block;
+                    padding: 0 0 0 10px;
+                    border: 1px solid #e60044;
+                    margin-right: 82px;
+                    outline: none;
+                }
+                >span {
+                    position: absolute;
+                    top: 5px;
+                    left: 123px;
+                    width: 82px;
+                    height: 29px;
+                    cursor: pointer;
+                    background: url('https://status.tuanimg.com/statics/zhe/common/img/index-common.png') -189px 0 no-repeat;
+                }
+            }
+        }
+    }
+    >.nav_two {
+        height: 38px;
+        >ul {
+            width: 980px;
+            margin: 0 auto;
+            overflow: hidden;
+            >li {
+                line-height: 38px;
+                float: left;
+                margin-right: 20px;
+            }
+        }
+    }
+    a:hover {
+        color: orangered;
+    }
+}
+
+//右侧盒子
+#sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    background-color: #000;
+    height: 100%;
+    min-height: 594px;
+    z-index: 10001;
+    visibility: visible;
+    left: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    >.tab-top {
+        margin-top: 50px;
+        padding: 10px 0;
+        height: 113px;
+        >a {
+            display: block;
+            height: 113px;
+            >.tab_img {
+                display: block;
+                width: 19px;
+                height: 17px;
+                margin: 0 auto;
+                background: url('https://status.tuanimg.com/statics/zhe/common/img/sidebar_cart.png');
+            }
+            >.tab_test {
+                display: block;
+                width: 20px;
+                height: 50px;
+                line-height: 16px;
+                font-size: 14px;
+                left: 10px;
+                top: 85px;
+                position: absolute;
+                color: #fff;
+            }
+            >#num {
+                width: 20px;
+                height: 20px;
+                margin: 0 auto;
+                font-size: 14px;
+                left: 8px;
+                top: 140px;
+                text-align: center;
+                border-radius: 50%;
+                position: absolute;
+                color: #fff;
+                background-color: #cf201c;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+        }
+    }
+    >.tab-top :hover {
+        background-color: #ec1611;
+    }
+    >.tab-icon {
+        width: 34px;
+        height: 42px;
+    }
+    .order_f {
+        width: 150px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 42px;
+        color: #fff;
+        text-align: center;
+        background: #ec1611;
+        display: none;
+        cursor: pointer;
+    }
+    >.order {
+        left: 0;
+        top: 183px;
+        position: absolute;
+        >a {
+            display: block;
+            width: 34px;
+            height: 42px;
+            background: url('https://z5.tuanimg.com/v2/core/img/sidePanelIconsNew.png') no-repeat -131px 0;
+        }
+        >.order_box {
+            left: -150px;
+            top: 1px;
+            position: absolute;
+        }
+    }
+    >.order:hover {
+        >a {
+            background-color: #ec1611;
+        }
+        .order_box {
+            display: block;
+        }
+    }
+    .coupons_outer {
+        left: 0px;
+        top: 226px;
+        position: absolute;
+        >.coupons {
+            width: 34px;
+            height: 32px;
+            >a {
+                display: block;
+                width: 34px;
+                height: 32px;
+                margin: 10px 0 0 8px;
+                background: url('https://z5.tuanimg.com/v2/core/img/quan_iconnew.png') no-repeat;
+            }
+            >.coupons_box {
+                left: -150px;
+                top: 0;
+                position: absolute;
+            }
+        }
+    }
+    .coupons_outer:hover {
+        background-color: #ec1611;
+        .coupons_box {
+            display: block;
+        }
+    }
+    >.side_collect {
+        left: 0px;
+        top: 268px;
+        position: absolute;
+        >.collect {
+            width: 34px;
+            height: 32px;
+            >a {
+                display: block;
+                width: 34px;
+                height: 32px;
+                margin: 10px 0 0 8px;
+                background: url('https://z5.tuanimg.com/v2/core/img/myFavorites.png')no-repeat 1px 0;
+            }
+            >.collect_box {
+                left: -150px;
+                top: 0;
+                position: absolute;
+            }
+        }
+    }
+    .side_collect:hover {
+        background-color: #ec1611;
+        .collect_box {
+            display: block;
+        }
+    }
+    .side_message {
+        left: 0;
+        top: 311px;
+        position: absolute;
+        >a {
+            display: block;
+            width: 34px;
+            height: 42px;
+            background: url('https://z5.tuanimg.com/v2/core/img/side_golds.png')no-repeat 4px -227px;
+        }
+        >.message {
+            left: -150px;
+            top: 1px;
+            position: absolute;
+        }
+    }
+    .side_message:hover {
+        >a {
+            background-color: #ec1611;
+        }
+        .message {
+            display: block;
+        }
+    }
+    .return_top {
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        display: none;
+        >a {
+            display: block;
+            width: 34px;
+            height: 42px;
+            background: url('https://z5.tuanimg.com/v2/core/img/sidePanelIconsNew.png') no-repeat -554px 0;
+        }
+        >.go_top {
+            left: -150px;
+            top: 1px;
+            position: absolute;
+        }
+    }
+    .return_top:hover {
+        >a {
+            background-color: #ec1611;
+        }
+        .go_top {
+            display: block;
+        }
+    }
+}
+
+//头部警告栏
+.top-warning {
+    height: 43px;
+    background-color: #fff5f8;
+    padding: 8px 0;
+    position: relative;
+    >span {
+        position: absolute;
+        display: block;
+        width: 17px;
+        height: 17px;
+        background: url('https://i4.tuanimg.com/shop/asset/d/icon/hb_1.250cb944.png')0 -79px no-repeat;
+        left: 260px;
+    }
+    >div {
+        width: 980px;
+        margin: 0 auto;
+        font-size: 14px;
+        color: red;
+        padding-left: 20px;
+    }
+}
+
+//头部
+.top_box {
+    width: 100%;
+    background-color: #fafafa;
+    >.toolbar {
+        width: 980px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 12px;
+        color: #999;
+        //工具栏    
+        >ul {
+            height: 30px;
+            >.phone {
+                position: relative;
+                >div {
+                    width: 121px;
+                    height: 120px;
+                    border: 1px solid blanchedalmond;
+                    position: absolute;
+                    left: -42px;
+                    top: 25px;
+                    background: #fff;
+                    display: none;
+                    z-index: 500;
+                    >a {
+                        display: block;
+                        width: 120px;
+                        height: 120px;
+                        background: url('https://status.tuanimg.com/statics/zhe/components/toolbar/img/big_bg_img_v3.png') center no-repeat;
+                    }
+                }
+            }
+            >.phone:hover {
+                background: #fff;
+                >div {
+                    display: block;
+                }
+            }
+            >li {
+                float: left;
+                margin: 5px 10px;
+                border-right: 1px solid #ccc;
+                padding-right: 10px;
+                cursor: pointer;
+                >.come {
+                    >a {
+                        color: red;
+                    }
+                }
+            }
+            >li:hover {
+                color: red;
+            }
+        }
+    }
+    >.header {
+        width: 980px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+        .header-img {
+            margin-top: 20px;
+        }
+        //搜索栏
+        .header-input {
+            margin-top: 25px;
+            height: 35px;
+            width: 500px;
+            border: 2px solid #e60044;
+            border-right: 0;
+            position: relative;
+            >div {
+                float: left;
+                line-height: 35px;
+                width: 100px;
+                height: 35px;
+                padding-right: 17px;
+                color: #fff;
+                font-size: 19px;
+                text-align: center;
+                font-family: "microsoft yahei";
+                background: url('https://status.tuanimg.com/statics/zhe/common/img/index-common.png')-34px -34px no-repeat;
+                cursor: pointer;
+            }
+            >input {
+                width: 200px;
+                height: 35px;
+                border: 0;
+                outline: none;
+                background-color: rgba(0, 0, 0, 0);
+            }
+            >span {
+                background: url('https://status.tuanimg.com/statics/zhe/common/img/index-common.png ') 0 -34px no-repeat;
+                width: 15px;
+                height: 39px;
+                position: absolute;
+                top: -2px;
+                left: 400px;
+            }
+            >a {
+                display: inline-block;
+                width: 48px;
+                height: 24px;
+                margin-top: 7px;
+                cursor: pointer;
+                background: url('https://status.tuanimg.com/statics/zhe/common/img/index-common.png') -34px 0 no-repeat;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .header-test>img {
+            width: 340px;
+            height: 40px;
+            margin-top: 25px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+    //导航栏
+    >.head_nav {
+        width: 980px;
+        margin: 0 auto;
+        margin-bottom: 2px;
+        >ul {
+            height: 42px;
+            color: #696969;
+            >li {
+                line-height: 40px;
+                height: 40px;
+                width: 109px;
+                float: left;
+                text-align: center;
+                padding-bottom: 2px;
+                cursor: pointer;
+            }
+            >li:hover {
+                border-bottom: 2px solid #e60044;
+                box-shadow: -2px 0 4px -1px #999;
+            }
+            >span {
+                margin-left: 115px;
+                line-height: 42px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+//轮播图块
+.top_box {
+    >.head_wrapper {
+        width: 980px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        >.wrapper_ul {
+            >ul {
+                float: left;
+                padding: 0 6px;
+                width: 145px;
+                position: relative;
+                >a {
+                    >li {
+                        width: 110px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 13px;
+                        border-bottom: 1px solid #ccc;
+                        cursor: pointer;
+                    }
+                    >li:hover {
+                        color: orangered;
+                    }
+                }
+                >.wrapper_box {
+                    position: absolute;
+                    padding: 0 10px;
+                    top: 0;
+                    left: 140px;
+                    width: 300px;
+                    height: 308px;
+                    border: 1px solid #999;
+                    font-size: 13px;
+                    background: #fff;
+                    display: none;
+                    z-index: 50;
+                    >li {
+                        >a:hover {
+                            color: orangered;
+                        }
+                    }
+                }
+            }
+            >ul:hover {
+                >.wrapper_box {
+                    display: block;
+                }
+            }
+        }
+        >.banner {
+            float: left;
+            position: relative;
+            cursor: pointer;
+            width: 731px;
+            height: 304px;
+            >ul {
+                width: 731px;
+                height: 304px;
+                >li {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    opacity: 0;
+                    >img {
+                        width: 731px;
+                        height: 304px;
+                    }
+                }
+                >li:nth-of-type(1) {
+                    opacity: 1;
+                }
+            }
+            >ol {
+                width: 125px;
+                height: 20px;
+                position: absolute;
+                left: 50%;
+                bottom: 5px;
+                >li {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    float: left;
+                    margin-right: 10px;
+                    text-indent: -999em;
+                    cursor: pointer;
+                }
+                >li.active {
+                    background: red;
+                }
+            }
+            >#leftarrow,
+            >#rightarrow {
+                color: #fff;
+                font-size: 70px;
+                text-decoration: none;
+                position: absolute;
+                top: 50%;
+                margin-top: -60px;
+                background: rgba($color: #555454, $alpha: 0.3);
+                display: none;
+            }
+            >#leftarrow {
+                left: 20px;
+            }
+            >#rightarrow {
+                right: 20px;
+            }
+        }
+        >.banner:hover {
+            >#leftarrow,
+            >#rightarrow {
+                display: block;
+            }
+        }
+        >.right_img {
+            width: 85px;
+            height: 304px;
+            float: right;
+            margin-top: 10px;
+            >div {
+                margin: auto;
+                width: 40px;
+                height: 100px;
+                border-radius: 25px;
+                cursor: pointer;
+                display: block;
+                background: url('https://status.tuanimg.com/statics/zhe/common/img/index-common.png')no-repeat -231px -34px;
+                ;
+            }
+        }
+    }
+}

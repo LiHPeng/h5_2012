@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.top-warning {
+  height: 43px;
+  background-color: #fff5f8;
+  padding: 8px 0; }
+
+.toolbar {
+  height: 30px;
+  background-color: #fafafa; }
+
+.header {
+  height: 100px;
+  background-color: red; }
+
+.head_nav {
+  height: 40px;
+  background-color: royalblue;
+  border-bottom: 1px solid #e5e5e5; }
+
+.head_wrapper {
+  height: 305px;
+  background-color: orange; }
+
+.brand_bg {
+  height: 407px;
+  background-color: palegoldenrod; }
+
+.flashSale_bg {
+  height: 300px;
+  margin-top: 30px;
+  background-color: palevioletred; }
+
+.hot_sale {
+  height: 200px;
+  margin-top: 30px;
+  background-color: powderblue; }
+
+.discounts {
+  height: 1000px;
+  margin-top: 30px;
+  background-color: gold; }
+
+.zhe {
+  height: 210px;
+  padding-bottom: 50px;
+  background-color: hotpink; }
+
+.about {
+  height: 300px;
+  border-top: 3px solid #ec1611;
+  background-color: indigo; }
+
+.foot-con {
+  height: 100px;
+  padding: 10px 0 30px 0;
+  background-color: lightseagreen; }
+
+/*# sourceMappingURL=index.css.map */
